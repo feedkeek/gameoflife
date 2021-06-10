@@ -1,5 +1,5 @@
 #ifndef GAME
-#include "game.h"
+#include "../game/game.h"
 #else
 #define GAME
 #endif // !GAME
