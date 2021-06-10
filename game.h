@@ -1,17 +1,20 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-enum CellType{
+enum CellType
+{
     Empty,
     Dead,
     Alive
 };
 
-typedef struct {
+typedef struct
+{
     int size;
     int cell;
 } Cell;
 
-Cell* new_board(int size);
-int get_cell(Cell* board, int r, int c);
-void set_cell(Cell* board, int cellType, int r, int c);
+Cell *new_board(int size);
+int get_cell(Cell *board, int r, int c);
+void set_cell(Cell *board, int cellType, int r, int c);
+void check_neighbours(Cell *, int, int);

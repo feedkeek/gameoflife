@@ -7,7 +7,7 @@ void draw(Cell* board) {
     printf("\033[47m");
     for(int i = 0;i < board -> size; i++) {
         for(int j = 0;j < board -> size; j++) {
-            int cell = get_cell(board, j, i);
+            int cell = get_cell(board, i, j);
             if(cell == Empty) {
                 // set background and foreground to gray
                 printf("\033[48;5;8m");
