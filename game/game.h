@@ -15,6 +15,9 @@ typedef struct
 } Cell;
 
 Cell *new_board(int size);
+Cell* create_copy_board(Cell *board);
 int get_cell(Cell *board, int r, int c);
 void set_cell(Cell *board, int cellType, int r, int c);
-void check_neighbours(Cell *, int, int);
+int check_neighbours(Cell *board, int r, int c);
+Cell* game_logic(Cell *board);
+int compare_boards(Cell *board1, Cell* board2);
