@@ -4,6 +4,6 @@
 #define GAME
 #endif // !GAME
 
+void draw(Cell *board);
 
-void draw(Cell* board);
 void clean();

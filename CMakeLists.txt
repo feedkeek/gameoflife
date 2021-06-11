@@ -3,6 +3,7 @@ project(gameoflife C)
 
 add_subdirectory(game)
 add_subdirectory(console)
+add_subdirectory(tests)
 
 add_executable(main main.c )
 
